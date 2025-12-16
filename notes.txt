@@ -1,0 +1,2 @@
+el .env tiene que siempre estar a la altura del package.json
+
