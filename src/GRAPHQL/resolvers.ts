@@ -2,7 +2,8 @@ import { ObjectId } from "mongodb";
 import { getDB } from "../DB/mongo"
 import { IResolvers } from "@graphql-tools/utils";
 import { signToken } from "../auth";
-
+import { getClothing, getClothingPorID, createClothing, getClosetFromIDs } from "../COLLECTIONS/Clothing";
+import { validateUser, createUser, buyClothing } from "../COLLECTIONS/Users";
 
 
 export const resolvers: IResolvers = {
